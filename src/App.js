@@ -6,18 +6,17 @@ import Form from "../src/Form"
 function App() {
   render() {
     return (
-      constructor() {
-        super()
-        this.state = {
-          itemList: [],
-        }
-      }
       <div className="App">
         <h1>To Do List</h1>
+        <Form
+          changeHandler={this.changeHandler}
+          submitHandler={this.submitHandler}
+        />
         <List itemList={this.state.itemList} />
       </div>
-    )
+    );
   }
 }
+
 
 export default App;
